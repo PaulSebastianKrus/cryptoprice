@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+    <h1>Finance Dashboard</h1>
+</header>
+<main>
+    <section class="price-section">
+        <div class="price-card">
+            <h2>Bitcoin (BTC)</h2>
+            <p id="bitcoin-price">Loading...</p>
+        </div>
+        <div class="price-card">
+            <h2>Ethereum (ETH)</h2>
+            <p id="ethereum-price">Loading...</p>
+        </div>
+    </section>
+    <section class="chart-section">
+        <h2>Bitcoin Price Chart (Last 7 Days)</h2>
+        <div id="loading-spinner" class="spinner"></div>
+        <canvas id="bitcoin-chart" width="400" height="200"></canvas>
+    </section>
+</main>
+<footer>
+    <p>Powered by CoinGecko API</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
