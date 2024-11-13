@@ -1,0 +1,22 @@
+{
+  "name": "cryptocurrency-dashboard",
+  "version": "1.0.0",
+  "description": "A cryptocurrency dashboard with a Node.js proxy server and frontend visualization.",
+  "main": "app.js",
+  "scripts": {
+    "start": "concurrently \"npm run start-proxy\" \"npm run start-live-server\"",
+    "start-proxy": "node app.js",
+    "start-live-server": "live-server public"
+  },
+  "dependencies": {
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "express": "^4.21.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.0.1"
+  },
+  "author": "Paul",
+  "license": "MIT"
+}

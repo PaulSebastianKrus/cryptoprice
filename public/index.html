@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@1.0.0"></script>
+
+</head>
+<body>
+<header>
+    <h1>Finance Dashboard</h1>
+</header>
+
+<aside class="sidebar">
+    <ul>
+        <li><a href="#" id="bitcoin-link">Bitcoin</a></li>
+        <li><a href="#" id="ethereum-link">Ethereum</a></li>
+        <li><a href="#" id="dogecoin-link">Dogecoin</a></li>
+        <li><a href="#" id="litecoin-link">Litecoin</a></li>
+        <li><a href="#" id="ripple-link">Ripple</a></li>
+    </ul>
+</aside>
+
+<main>
+    <section class="coin-section" id="bitcoin-section">
+        <div class="price-card">
+            <h2>Bitcoin (BTC)</h2>
+            <p id="bitcoin-price">Loading...</p>
+        </div>
+        <h2>Bitcoin Price Chart (Last 7 Days)</h2>
+        <div id="loading-spinner" class="spinner"></div>
+        <canvas id="bitcoin-chart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="coin-section" id="ethereum-section" style="display: none;">
+        <div class="price-card">
+            <h2>Ethereum (ETH)</h2>
+            <p id="ethereum-price">Loading...</p>
+        </div>
+        <h2>Ethereum Price Chart (Last 7 Days)</h2>
+        <div id="loading-spinner-ethereum" class="spinner"></div>
+        <canvas id="ethereum-chart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="coin-section" id="dogecoin-section" style="display: none;">
+        <div class="price-card">
+            <h2>Dogecoin (DOGE)</h2>
+            <p id="dogecoin-price">Loading...</p>
+        </div>
+        <h2>Dogecoin Price Chart (Last 7 Days)</h2>
+        <div id="loading-spinner-dogecoin" class="spinner"></div>
+        <canvas id="dogecoin-chart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="coin-section" id="litecoin-section" style="display: none;">
+        <div class="price-card">
+            <h2>Litecoin (LTC)</h2>
+            <p id="litecoin-price">Loading...</p>
+        </div>
+        <h2>Litecoin Price Chart (Last 7 Days)</h2>
+        <div id="loading-spinner-litecoin" class="spinner"></div>
+        <canvas id="litecoin-chart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="coin-section" id="ripple-section" style="display: none;">
+        <div class="price-card">
+            <h2>Ripple (XRP)</h2>
+            <p id="ripple-price">Loading...</p>
+        </div>
+        <h2>Ripple Price Chart (Last 7 Days)</h2>
+        <div id="loading-spinner-ripple" class="spinner"></div>
+        <canvas id="ripple-chart" width="400" height="200"></canvas>
+    </section>
+</main>
+
+<footer>
+    <p>Powered by CoinGecko API</p>
+</footer>
+<script src="/main.js"></script>
+</body>
+</html>
