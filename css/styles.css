@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text */
+    color: #e0e0e0; /* Light text color */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@ body {
 
 header {
     background-color: #1f1f1f; /* Darker header */
-    color: #fff;
+    color: #ffffff;
     padding: 20px;
     width: 100%;
     text-align: center;
@@ -26,13 +26,13 @@ main {
     padding: 20px;
     width: 90%;
     max-width: 800px;
-    background-color: #181818; /* Dark background for main content */
+    background-color: #1e1e1e; /* Dark main content area */
     border-radius: 8px;
 }
 
 footer {
-    background-color: #333; /* Dark footer */
-    color: #fff;
+    background-color: #333;
+    color: white;
     padding: 10px;
     margin-top: 20px;
     text-align: center;
@@ -41,43 +41,42 @@ footer {
 
 /* Price Section */
 .price-section {
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
     margin-bottom: 20px;
 }
 
-.price-card {
-    background-color: #2c2c2c; /* Dark background for cards */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Stronger shadow */
-    padding: 20px;
-    text-align: center;
-    width: 45%;
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #444; /* Dark border */
 }
 
-.price-card h2 {
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.price-card p {
-    font-size: 1.5em;
+.coin-name {
     font-weight: bold;
-    color: #fff;
+    flex: 1;
+    color: #e0e0e0; /* Light text color for coin names */
+}
+
+.coin-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    color: #4caf50; /* Green price color */
 }
 
 /* Chart Section */
 .chart-section {
     text-align: center;
-    background-color: #2c2c2c; /* Dark background for the chart section */
+    background-color: #1e1e1e; /* Dark background */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Darker shadow */
     padding: 20px;
 }
 
 .spinner {
-    border: 8px solid #444; /* Darker grey for spinner */
-    border-top: 8px solid #0077cc; /* Bright accent color */
+    border: 8px solid #444; /* Dark grey spinner background */
+    border-top: 8px solid #0077cc; /* Blue spinner top */
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -94,7 +93,7 @@ footer {
     }
 }
 
-/* Coin Links */
+/* Coin Links Section */
 .coin-links {
     display: flex;
     justify-content: space-around;
@@ -103,7 +102,7 @@ footer {
 
 .coin-links a {
     text-decoration: none;
-    background-color: #4CAF50; /* Green for links */
+    background-color: #4CAF50; /* Green button background */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -111,5 +110,5 @@ footer {
 }
 
 .coin-links a:hover {
-    background-color: #45a049; /* Slightly darker green on hover */
+    background-color: #45a049; /* Darker green on hover */
 }

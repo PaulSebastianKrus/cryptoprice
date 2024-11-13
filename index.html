@@ -10,45 +10,50 @@
 <body>
 <header>
     <h1>Finance Dashboard</h1>
-    <div class="coin-links">
-        <a href="#" id="bitcoin-link">Bitcoin (BTC)</a>
-        <a href="#" id="ethereum-link">Ethereum (ETH)</a>
-        <a href="#" id="dogecoin-link">Dogecoin (DOGE)</a>
-        <a href="#" id="litecoin-link">Litecoin (LTC)</a>
-        <a href="#" id="ripple-link">Ripple (XRP)</a>
-        <!-- Add more coins as needed -->
-    </div>
 </header>
 <main>
     <section class="price-section">
-        <div class="price-card">
-            <h2>Bitcoin (BTC)</h2>
-            <p id="bitcoin-price">Loading...</p>
+        <div class="price-row">
+            <div class="coin-name">Bitcoin (BTC)</div>
+            <div id="bitcoin-price" class="coin-price">Loading...</div>
         </div>
-        <div class="price-card">
-            <h2>Ethereum (ETH)</h2>
-            <p id="ethereum-price">Loading...</p>
+        <div class="price-row">
+            <div class="coin-name">Ethereum (ETH)</div>
+            <div id="ethereum-price" class="coin-price">Loading...</div>
         </div>
-        <div class="price-card" id="dogecoin-card">
-            <h2>Dogecoin (DOGE)</h2>
-            <p id="dogecoin-price">Loading...</p>
+        <div class="price-row">
+            <div class="coin-name">Dogecoin (DOGE)</div>
+            <div id="dogecoin-price" class="coin-price">Loading...</div>
         </div>
-        <div class="price-card" id="litecoin-card">
-            <h2>Litecoin (LTC)</h2>
-            <p id="litecoin-price">Loading...</p>
+        <div class="price-row">
+            <div class="coin-name">Litecoin (LTC)</div>
+            <div id="litecoin-price" class="coin-price">Loading...</div>
         </div>
-        <div class="price-card" id="ripple-card">
-            <h2>Ripple (XRP)</h2>
-            <p id="ripple-price">Loading...</p>
+        <div class="price-row">
+            <div class="coin-name">Ripple (XRP)</div>
+            <div id="ripple-price" class="coin-price">Loading...</div>
         </div>
     </section>
 
 
-    <section class="chart-section">
-        <h2>Bitcoin Price Chart (Last 7 Days)</h2>
+    <!-- Dropdown Menu for Coin Selection -->
+    <div>
+        <label for="coin-selector">Select Coin:</label>
+        <select id="coin-selector">
+            <option value="bitcoin">Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="dogecoin">Dogecoin</option>
+            <option value="litecoin">Litecoin</option>
+            <option value="ripple">Ripple</option>
+        </select>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="chart-section">
+        <canvas id="coin-chart"></canvas>
         <div id="loading-spinner" class="spinner"></div>
-        <canvas id="bitcoin-chart" width="400" height="200"></canvas>
-    </section>
+    </div>
+
 </main>
 <footer>
     <p>Powered by CoinGecko API</p>
