@@ -10,6 +10,14 @@
 <body>
 <header>
     <h1>Finance Dashboard</h1>
+    <div class="coin-links">
+        <a href="#" id="bitcoin-link">Bitcoin (BTC)</a>
+        <a href="#" id="ethereum-link">Ethereum (ETH)</a>
+        <a href="#" id="dogecoin-link">Dogecoin (DOGE)</a>
+        <a href="#" id="litecoin-link">Litecoin (LTC)</a>
+        <a href="#" id="ripple-link">Ripple (XRP)</a>
+        <!-- Add more coins as needed -->
+    </div>
 </header>
 <main>
     <section class="price-section">
@@ -21,7 +29,21 @@
             <h2>Ethereum (ETH)</h2>
             <p id="ethereum-price">Loading...</p>
         </div>
+        <div class="price-card" id="dogecoin-card">
+            <h2>Dogecoin (DOGE)</h2>
+            <p id="dogecoin-price">Loading...</p>
+        </div>
+        <div class="price-card" id="litecoin-card">
+            <h2>Litecoin (LTC)</h2>
+            <p id="litecoin-price">Loading...</p>
+        </div>
+        <div class="price-card" id="ripple-card">
+            <h2>Ripple (XRP)</h2>
+            <p id="ripple-price">Loading...</p>
+        </div>
     </section>
+
+
     <section class="chart-section">
         <h2>Bitcoin Price Chart (Last 7 Days)</h2>
         <div id="loading-spinner" class="spinner"></div>
